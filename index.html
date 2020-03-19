@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Citations drôles</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container text-center">
+
+    <!-- header #5 -->
+    <header class="header" id="header5">
+      <!-- demo only update note -->
+
+      <div class="right"> <img src="img/GClogo.png" alt="" class="img-fluid  animated bounceInLeft"> </div>
+      <p class="opacity-text">Hello!</p>
+      <div class="left">
+        <div class="caption animated bounceInRight">
+          <h2 class="title display-3">Générateurs de citations drôles</h2>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Choisissez votre thème</h3>
+        <button id="potter" onclick="choixPhrase('HarryPotter')" class="buttonHarry">Harry Potter</button>
+        <button id="addams" onclick="choixPhrase('Addams')" class="buttonaddams">Famille Addams</button>
+      </div>
+      <div class="col-sm-12">
+        <h4 id="phrase">Choisir le nombre de citations générées</h4>
+        <button onclick="nombrePhrase('1')" class="button2">1</button>
+        <button onclick="nombrePhrase('2')" class="button2">2</button>
+        <button onclick="nombrePhrase('3')" class="button2">3</button>
+        <button onclick="nombrePhrase('4')" class="button2">4</button>
+        <button onclick="nombrePhrase('5')" class="button2">5</button>
+      </div>
+      <div class="col-sm-12">
+        <button type="button" onclick="getSelect(choix)" class="button3" id="generate">Générer</button>
+        <button type="button" class="button3" id="reset" onclick="restart()">Recommencer</button>
+      </div>
+      <div class="col-sm-12" id="citationsBloque">
+        <p id="mesPhrases"></p>
+        <p id="blockquote">
+          <!-- création des "blockquote"-->
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
