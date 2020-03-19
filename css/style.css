@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+[class*="col"] {
+	margin-bottom: 20px;
+}
+
+.container {
+	margin-top: 50px;
+	max-width: 1024px;
+}
+
+body {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-style: normal;
+	color: #ffffff;
+	font-weight: 100;
+}
+
+/*@media screen and (max-width: 576px){
+.log1 img{
+  display: none;
+}
+}
+*/
+
+/* Bouton Harry*/
+.buttonHarry {
+	width: 30%;
+	height: 100px;
+	background: url(../img/potter.jpg);
+	background-size: cover;
+	color: white;
+	border: none;
+	font-size: 18px;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+.button:hover {
+	background-color: #0ab252;
+}
+
+.button:focus {
+	background-color: #cbcbcb;
+	outline: none;
+}
+
+/* Bouton Potter*/
+.buttonaddams {
+	width: 30%;
+	height: 100px;
+	background: url(../img/addams.jpg);
+	background-size: cover;
+	color: white;
+	border: none;
+	font-size: 18px;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+.button:hover {
+	background-color: rgba(255, 255, 255, 0);
+	cursor: pointer;
+}
+
+.button:focus {
+	background-color: #cbcbcb;
+	outline: none;
+}
+
+/* Bouton 2*/
+.button2 {
+	margin: 10px;
+	;
+	padding: 8px;
+	width: 60%;
+	max-width: 200px;
+	background: #8de7cf;
+	/* fallback color for old browsers */
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50px;
+	color: #8de7cf;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-out;
+}
+
+.button2:hover {
+	background-color: #8de7cf;
+}
+
+.button2:focus {
+	background-color: #F3ECEC;
+	outline: none;
+}
+
+/* Bouton 3*/
+.button3 {
+	width: 50%;
+	height: 50px;
+	background: linear-gradient(to left, #4ac29a, #bdfff3);
+	border: none;
+	font-size: 18px;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+.button3:hover {
+	background-color: #0ab252;
+}
+
+.button3:focus {
+	background-color: #78c78a;
+	outline: none;
+}
+
+/*Bloc de citation*/
+#citationsBloque {
+	font-size: 18px;
+	margin: 50px auto;
+	color: #555555;
+	padding: 1.2em 30px 1.2em 75px;
+	border-left: 8px solid #70d6b7;
+	line-height: 1.6;
+	background: linear-gradient(to right, #4ac29a, #bdfff3);
+}
+
+#citationsBloque :before {
+	color: #0ab252;
+	font-size: 4em;
+	left: 10px;
+	top: -10px;
+}
+
+/* =======================================
+ header#5
+========================================*/
+#header5 {
+	background: #355c7d;
+	background: linear-gradient(to right, #4ac29a, #bdfff3);
+	z-index: 0;
+	overflow: hidden;
+}
+
+#header5 .right {
+	display: none;
+}
+
+#header5 .opacity-text {
+	position: absolute;
+	left: 75%;
+	top: 15%;
+	transform: translate(-50%, -50%);
+	font-size: 10rem;
+	font-weight: 900;
+	columns: #fff;
+	opacity: 0.1;
+	transform: rotate(90deg);
+}
+
+#header5 .caption {
+	z-index: 5;
+	text-align: center;
+	color: #fff;
+}
+
+#header5 .caption .title {
+	margin-bottom: 1.5rem;
+}
+
+#header5 .caption .text {
+	margin-bottom: 1.5rem;
+}
+
+#header5 .caption .action {
+	margin-bottom: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	border-radius: 10px;
+}
+
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+	#header5 .right {
+		display: block;
+	}
+
+	#header5 .caption {
+		text-align: right;
+	}
